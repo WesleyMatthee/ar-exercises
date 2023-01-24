@@ -24,3 +24,5 @@ Store.create(
   mens_apparel: true, 
   womens_apparel: false
   )
+
+  puts "Number of stores are #{Store.count}!" 
