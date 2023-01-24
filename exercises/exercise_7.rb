@@ -9,4 +9,11 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
+puts "Enter a store name"
+print ">>"
+
+@new_store = Store.create(name: "#{store_name}")
+@new_store.save
+
+@error = @new_store.error.each {|error| p error}
 # Your code goes here ...
